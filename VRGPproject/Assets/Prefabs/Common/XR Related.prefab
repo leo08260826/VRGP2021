@@ -153,7 +153,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -733,6 +733,7 @@ GameObject:
   - component: {fileID: 9156312825927409150}
   - component: {fileID: 9156312825927409151}
   - component: {fileID: 9156312825927409148}
+  - component: {fileID: 1543868453}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -769,8 +770,8 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 7358676227984629077, guid: 6d80b4b2ce26e074ea39f46b2f125dd3, type: 3}
-  m_ModelParent: {fileID: 0}
+  m_ModelPrefab: {fileID: 4029192643813367126, guid: be403a675583e7f4498c3955076f220b, type: 3}
+  m_ModelParent: {fileID: 9156312825927409145}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
   m_ModelSelectTransition: 
@@ -1009,6 +1010,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1543868453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9156312825927409144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53db7d97dc9de354e8d59f10886addf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handObjName: rightHandBones(Clone)
+  colorObjName: RightHandPPaint
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &9156312825959269069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,6 +1193,7 @@ GameObject:
   - component: {fileID: 9156312826225295602}
   - component: {fileID: 9156312826225295603}
   - component: {fileID: 9156312826225295600}
+  - component: {fileID: 1867476534}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -1213,8 +1230,8 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 1441932993811992235, guid: 7dc11430040f6bf4884acd7824a73af3, type: 3}
-  m_ModelParent: {fileID: 0}
+  m_ModelPrefab: {fileID: 3835852115812180265, guid: cfba49fff6a07174db14105c4eb4a0bc, type: 3}
+  m_ModelParent: {fileID: 9156312826225295597}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
   m_ModelSelectTransition: 
@@ -1453,6 +1470,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1867476534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9156312826225295596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53db7d97dc9de354e8d59f10886addf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handObjName: leftHandBones(Clone)
+  colorObjName: LeftHandPaint
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &9156312826508943705
 GameObject:
   m_ObjectHideFlags: 0
