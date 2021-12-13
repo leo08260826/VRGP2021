@@ -6,6 +6,9 @@ public class TestGesture : MonoBehaviour
 {
     private LeftHandGesture left;
     public string handObjName;
+    public float index;
+    public float three;
+    public float thumb;
 
     void Update()
     {
