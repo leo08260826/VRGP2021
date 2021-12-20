@@ -19,7 +19,7 @@ public class TestGesture : MonoBehaviour
     }
     public void GestureStart()
     {
-        left.LeftGestureStart(1,1,1);
+        left.LeftGestureStart(index, three, thumb);
     }
 
     public void GestureEnd()
