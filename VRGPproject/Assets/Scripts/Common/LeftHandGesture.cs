@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class LeftHandGesture : MonoBehaviour
 {
-    Animator ani;
+    private Animator ani;
 
     void Start()
     {
         ani = GetComponent<Animator>();
     }
 
+    // Gestures for holding stuff
     public void LeftGestureStart(float index, float three, float thumb)
     {
         ani.SetFloat("Index",index);
@@ -22,5 +23,16 @@ public class LeftHandGesture : MonoBehaviour
     public void LeftGestureEnd()
     {
         ani.SetBool("isGesture", false);
+    }
+
+    // Gesture for hand painting
+    public void LeftGestureStampStart()
+    {
+        ani.SetBool("isGestureStamp", true);
+    }
+
+    public void LeftGestureStampEnd()
+    {
+        ani.SetBool("isGestureStamp", false);
     }
 }
