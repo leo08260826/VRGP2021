@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
@@ -1560,7 +1560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96143ce791c3f4c4da127872486db681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handObjName: leftHandBones(Clone)
+  handObjName: combineLeftwithPaint(Clone)
   index: 1
   three: 1
   thumb: 1
@@ -2024,10 +2024,6 @@ PrefabInstance:
     - target: {fileID: 9156312826225295600, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
       propertyPath: OnRelease.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: TestGesture, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9156312826225295600, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
-      propertyPath: OnPress.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9156312826225295600, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
       propertyPath: OnPress.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName

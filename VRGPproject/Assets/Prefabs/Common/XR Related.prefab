@@ -770,7 +770,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 4029192643813367126, guid: be403a675583e7f4498c3955076f220b, type: 3}
+  m_ModelPrefab: {fileID: 4669764731802940573, guid: 2c32a90df8a86c744810106fc71367c7, type: 3}
   m_ModelParent: {fileID: 9156312825927409145}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -1022,8 +1022,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53db7d97dc9de354e8d59f10886addf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handObjName: rightHandBones(Clone)
-  colorObjName: RightHandPPaint
+  pathTohandObj:
+  - combineRightwithPaint(Clone)
+  - paint
+  - RightHand
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &9156312825959269069
 GameObject:
@@ -1230,7 +1232,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 3835852115812180265, guid: cfba49fff6a07174db14105c4eb4a0bc, type: 3}
+  m_ModelPrefab: {fileID: 4878085972933274625, guid: 811e4577107c5364bbcd2308677c8472, type: 3}
   m_ModelParent: {fileID: 9156312826225295597}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -1482,8 +1484,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53db7d97dc9de354e8d59f10886addf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handObjName: leftHandBones(Clone)
-  colorObjName: LeftHandPaint
+  pathTohandObj:
+  - combineLeftwithPaint(Clone)
+  - paint
+  - LeftHand
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &9156312826508943705
 GameObject:

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class HandPaintColorChange : MonoBehaviour
 {    
-    public string handObjName;
-    public string colorObjName;
+    public string [] pathTohandObj;
     public Color defaultColor;
 
     private GameObject colorObj = null;
@@ -14,7 +13,11 @@ public class HandPaintColorChange : MonoBehaviour
     {
         if(colorObj==null)
         {
-            colorObj = transform.Find(handObjName).gameObject.transform.Find(colorObjName).gameObject;
+            colorObj = gameObject;
+            for(int i=0; i<pathTohandObj.Length; i++)
+            {
+                colorObj = colorObj.transform.Find(pathTohandObj[i]).gameObject;
+            }
             ChangeColor(defaultColor);
         }
     }

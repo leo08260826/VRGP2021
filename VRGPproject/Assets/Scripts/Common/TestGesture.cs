@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TestGesture : MonoBehaviour
 {
-    private LeftHandGesture left;
+    private LeftHandGestureWithPaint left;
     public string handObjName;
     public float index;
     public float three;
@@ -14,16 +14,18 @@ public class TestGesture : MonoBehaviour
     {
         if(left==null)
         {
-            left = transform.Find(handObjName).gameObject.GetComponent<LeftHandGesture>();
+            left = transform.Find(handObjName).gameObject.GetComponent<LeftHandGestureWithPaint>();
         }
     }
     public void GestureStart()
     {
         left.LeftGestureStart(index, three, thumb);
+        // left.LeftGestureStampStart();
     }
 
     public void GestureEnd()
     {
         left.LeftGestureEnd();
+        // left.LeftGestureStampEnd();
     }
 }
