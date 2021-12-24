@@ -2109,6 +2109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chair_Rustic_DarkBrown
       objectReference: {fileID: 0}
+    - target: {fileID: 2201713290498737558, guid: 871393a7ca15db24c92400d7452a6a5b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 871393a7ca15db24c92400d7452a6a5b, type: 3}
 --- !u!4 &861532350 stripped
@@ -4252,11 +4256,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9156312825959269075, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0999996
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: 9156312825959269075, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.73
+      value: 3.8
       objectReference: {fileID: 0}
     - target: {fileID: 9156312825959269075, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
       propertyPath: m_LocalRotation.w
