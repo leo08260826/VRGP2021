@@ -7,14 +7,16 @@ using UnityEngine.Playables;
 public class MovePlayableAsset : PlayableAsset
 {
     public ExposedReference<Transform> targetTransform;
-    public Vector3 position;
+    public Vector3 startPosition;
+    public Vector3 endPosition;
     // Factory method that generates a playable based on this asset
     public override Playable CreatePlayable(PlayableGraph graph, GameObject go)
     {
-        MovePlayableBehaviour playableBehaviour = new MovePlayableBehaviour();
+        ScriptPlayable<MovePlayableBehaviour> playable = ScriptPlayable<MovePlayableBehaviour>.Create(graph);
+        MovePlayableBehaviour playableBehaviour = playable.GetBehaviour();
         playableBehaviour.targetTransform = targetTransform.Resolve(graph.GetResolver());
-        playableBehaviour.position = position;
+        // playableBehaviour.position = position;
 
-        return ScriptPlayable<MovePlayableBehaviour>.Create(graph, playableBehaviour);
+        return playable;
     }
 }
