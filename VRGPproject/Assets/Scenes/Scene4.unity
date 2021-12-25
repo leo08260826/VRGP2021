@@ -498,6 +498,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1f8f4dd08a8e1c346a29c4ea114b20b0, type: 3}
   m_PrefabInstance: {fileID: 195489258}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &248607195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9156312826225295596, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
+  m_PrefabInstance: {fileID: 319689727}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &248607197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248607195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96143ce791c3f4c4da127872486db681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handObjName: combineLeftwithPaint(Clone)
+  index: 1
+  three: 1
+  thumb: 1
+--- !u!114 &248607198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248607195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a8d337e8bc7ac4498e0df29e7b8bd5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    m_Name: Action
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ebb89aac-03dc-46bd-8cbb-247ce0d24234
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 0d9fcf93-707e-41b0-82f2-62f850de6d7a
+      m_Path: <XRController>{LeftHand}/gripButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
+  OnPress:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 248607197}
+        m_TargetAssemblyTypeName: TestGesture, Assembly-CSharp
+        m_MethodName: GestureStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnRelease:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 248607197}
+        m_TargetAssemblyTypeName: TestGesture, Assembly-CSharp
+        m_MethodName: GestureEnd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &251968442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -679,6 +758,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1867476534, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
+      propertyPath: defaultColor.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9156312825959269075, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.533
@@ -900,6 +983,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 06fa93e6873e8c44fbd668b15d71fb14, type: 3}
   m_PrefabInstance: {fileID: 400938166}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &407433345 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7778467939813156859, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
+  m_PrefabInstance: {fileID: 319689727}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &494110591
 PrefabInstance:
@@ -2984,7 +3072,7 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -2000419984136493869, guid: d51820eca3cd3fc4b979c6f456d75fcc, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 407433345}
   - key: {fileID: 3430415442282241708, guid: d51820eca3cd3fc4b979c6f456d75fcc, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
