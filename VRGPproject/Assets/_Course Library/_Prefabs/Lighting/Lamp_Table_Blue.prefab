@@ -232,7 +232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5604108310997910333}
   m_Layer: 0
-  m_Name: Lamp_Table1_B_Prefab
+  m_Name: Lamp_Table_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
