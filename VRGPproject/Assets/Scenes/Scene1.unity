@@ -394,7 +394,7 @@ PlayableDirector:
   - key: {fileID: -7337458565138896834, guid: 620cbc2883e209843ac2b053e0871e05, type: 2}
     value: {fileID: 702292463}
   - key: {fileID: 3501011880919554098, guid: 620cbc2883e209843ac2b053e0871e05, type: 2}
-    value: {fileID: 379886346}
+    value: {fileID: 1261279399}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &24567955
@@ -446,7 +446,7 @@ PlayableDirector:
   - key: {fileID: 7556500627732287208, guid: 8aa706ec8858be94e857896038db64a4, type: 2}
     value: {fileID: 398272674}
   - key: {fileID: 7424350524217947622, guid: 8aa706ec8858be94e857896038db64a4, type: 2}
-    value: {fileID: 379886346}
+    value: {fileID: 1261279399}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &62731979
@@ -1472,11 +1472,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &379886346 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4517921065104388570, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
-  m_PrefabInstance: {fileID: 9156312826393232898}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &398272674
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,6 +3002,11 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!95 &1261279399 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7778467939813156859, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
+  m_PrefabInstance: {fileID: 9156312826393232898}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1359659918
 GameObject:
   m_ObjectHideFlags: 0
