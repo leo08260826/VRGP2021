@@ -52,7 +52,7 @@ Shader "Custom/Transition"
             fixed4 frag (v2f i) : SV_Target
             {
                 fixed4 plot = tex2D(_MainTex, i.uv);
-                float trueProgress = (_Progress + ((plot.x - 0.5f) * 0.1f)) * _MainTex_ST.y;
+                float trueProgress = (_Progress * 1.02f + ((plot.x - 0.5f) * 0.1f)) * _MainTex_ST.y;
                 float lerpValue = 
                 (
                     step(trueProgress - 0.015f, i.uv.y) + 
