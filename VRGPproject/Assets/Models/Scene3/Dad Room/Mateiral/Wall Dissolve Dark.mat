@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Wall Dissolve Dark
-  m_Shader: {fileID: -6465566751694194690, guid: 67f77dac82a7abd4192cfcfd0bc677f5, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 03bfb978ef32544c8b76c62bebc31788, type: 3}
   m_ShaderKeywords: _PARALLAXMAP _SPECULAR_SETUP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -113,7 +113,9 @@ Material:
     - _WorkflowMode: 0
     - _ZWrite: 0
     m_Colors:
+    - Color_22c8a89f6b964f60848344c754ab1aa7: {r: 0.72, g: 0.72, b: 0.72, a: 1}
     - Color_6e99dcf8c2894fe6a9931b5a2ca48d70: {r: 1, g: 1, b: 1, a: 1}
+    - Vector2_5017e8b1d1c04ab5a8e0877307e4c555: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
