@@ -9,6 +9,7 @@ public class DecalCaster : MonoBehaviour
     public Vector2 decalSize = Vector2.one;
     public LayerMask decalLayer;
     private bool rayHit = false;
+    private bool CallCompleteStamping = false;
 
     private Vector3 lastFramePos;
 
@@ -29,10 +30,20 @@ public class DecalCaster : MonoBehaviour
             {
                 rayHit = true;
                 receiver.AddDecal(this, hit);
+                if (!CallCompleteStamping)
+                {
+                    Invoke("CompleteStamping", 30f);
+                    CallCompleteStamping = true;
+                }     
             }
         }
         else
             rayHit = false;
         lastFramePos = transform.position;
+    }
+
+    private void CompleteStamping()
+    {
+        TimeLineControl.StampIsTriggered = true;
     }
 }
