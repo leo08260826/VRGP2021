@@ -6,10 +6,6 @@ using UnityEngine.SceneManagement;
 public class Scene1ChangeScene : MonoBehaviour
 {
     public int sceneNum;
-    void Update()
-    {
-        ChangeScene();
-    }
     
     public void ChangeScene()
     {

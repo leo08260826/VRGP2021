@@ -807,6 +807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mirror
       objectReference: {fileID: 0}
+    - target: {fileID: 1574417695879800606, guid: 9746e8b4dfc428548b820af21833fc14, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1574417696318275151, guid: 9746e8b4dfc428548b820af21833fc14, type: 3}
       propertyPath: m_TargetTexture
       value: 
