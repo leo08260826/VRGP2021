@@ -593,6 +593,10 @@ PrefabInstance:
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1574417696318275151, guid: 9746e8b4dfc428548b820af21833fc14, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 3255
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9746e8b4dfc428548b820af21833fc14, type: 3}
 --- !u!4 &8518211388888362694 stripped
