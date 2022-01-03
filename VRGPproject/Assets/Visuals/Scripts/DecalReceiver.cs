@@ -18,10 +18,13 @@ public class DecalReceiver : MonoBehaviour
         Renderer renderer = newDecal.GetComponent<Renderer>();
         MaterialPropertyBlock prop = new MaterialPropertyBlock();
 
-        renderer.GetPropertyBlock(prop);
+        /*renderer.GetPropertyBlock(prop);
         prop.SetTexture("_BaseMap", caster.decalTexture);
         prop.SetColor("_Color", caster.decalColor);
-        renderer.SetPropertyBlock(prop);
+        renderer.SetPropertyBlock(prop);*/
+
+        renderer.material.SetTexture("_BaseMap", caster.decalTexture);
+        renderer.material.SetColor("_BaseColor", caster.decalColor);
 
         newDecal.transform.SetParent(transform);
         decals.Add(newDecal);

@@ -173,7 +173,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 823
+    m_Bits: 1847
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 9156312825927409149}
   - component: {fileID: 9156312825927409150}
   - component: {fileID: 9156312825927409151}
-  - component: {fileID: 1543868453}
+  - component: {fileID: 2415851541120845458}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Player
@@ -502,7 +502,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1543868453
+--- !u!114 &2415851541120845458
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -511,7 +511,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9156312825927409144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53db7d97dc9de354e8d59f10886addf9, type: 3}
+  m_Script: {fileID: 11500000, guid: bee893e4f7a7804479d50435aaaacc7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pathTohandObj:
@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 9156312826225295601}
   - component: {fileID: 9156312826225295602}
   - component: {fileID: 9156312826225295603}
-  - component: {fileID: 1867476534}
+  - component: {fileID: 6326485886455628382}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Player
@@ -849,7 +849,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1867476534
+--- !u!114 &6326485886455628382
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -858,7 +858,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9156312826225295596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53db7d97dc9de354e8d59f10886addf9, type: 3}
+  m_Script: {fileID: 11500000, guid: bee893e4f7a7804479d50435aaaacc7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pathTohandObj:
@@ -969,6 +969,10 @@ PrefabInstance:
     - target: {fileID: 4943110515591164302, guid: de116d52cd07b544292ab3eb2876dbef, type: 3}
       propertyPath: m_Name
       value: TransitionEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943110515591164302, guid: de116d52cd07b544292ab3eb2876dbef, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4943110515591164302, guid: de116d52cd07b544292ab3eb2876dbef, type: 3}
       propertyPath: m_IsActive
