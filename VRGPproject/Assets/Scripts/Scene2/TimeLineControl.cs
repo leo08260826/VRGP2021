@@ -5,28 +5,21 @@ using UnityEngine.Playables;
 
 public class TimeLineControl : MonoBehaviour
 {
+    [HideInInspector]
     public PlayableDirector PD;
-    public bool IsPause = false;
 
-    public GameObject mom_face;
-    public GameObject player_face;
+    private bool Pause = false;
+    static int anim_stage = 0;
+
+    public static bool BucketIsTriggered = false;
+    public static bool StampIsTriggered = false;
+    public static bool GiftIsReceived = false;
 
     // Start is called before the first frame update
     void Start()
     {
         PD = GetComponent<PlayableDirector>();
     }
-
-    // Update is called once per frame
-    /*void Update()
-    {
-        //獲取播放進度
-        //float normalizedTime = (float)(PD.time / PD.duration);
-        if (IsPause)
-        {
-            
-        }
-    }*/
 
     public void MyPause()
     {
@@ -35,8 +28,10 @@ public class TimeLineControl : MonoBehaviour
             //PD.Pause() will reset transform
             //PD.Stop() can't continue to play with the status of stop;
             PD.playableGraph.GetRootPlayable(0).SetSpeed(0);
-            //IsPause = true;
-            Invoke("MyContinue", 3f);
+            Invoke("MyContinue", 1f);
+            anim_stage += 1;
+            Pause = true;
+            Debug.Log("Now Pause!");
         }
     }
 
@@ -45,13 +40,55 @@ public class TimeLineControl : MonoBehaviour
         if(PD != null)
         {
             PD.playableGraph.GetRootPlayable(0).SetSpeed(1);
+            Pause = false;
+            Debug.Log("Now Continue!");
         }
     }
 
-    public void FacePlayer()
+    public void Stop2Talk()
     {
-        mom_face.transform.LookAt(player_face.transform);
+        if(anim_stage == 1)
+        {
+            MyPause(); 
+            Invoke("MyContinue", 3f); // wait for talking
+        }
+    }
+
+    public void CanGetColor()
+    {
         MyPause();
-        Debug.Log("FacePlayer!!!");
+        HandPaintColorChange_scene2.CanGetColor = true;
+    }
+
+    public void LeaveRoom()
+    {   
+        if(anim_stage == 2 && Pause)
+        {
+            MyContinue();
+        }
+    }
+
+    public void Faint()
+    {
+        if (anim_stage == 3 && Pause)
+        {
+            MyContinue();
+        }
+    }
+
+    public void Update()
+    {
+        if (BucketIsTriggered)
+        {
+            PD.Play();
+        }
+        else if (StampIsTriggered)
+        {
+            LeaveRoom();
+        }
+        else if (GiftIsReceived)
+        {
+            Faint();
+        }
     }
 }
