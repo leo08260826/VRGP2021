@@ -3330,6 +3330,8 @@ PlayableDirector:
     value: {fileID: 721967516}
   - key: {fileID: -4838028054166326915, guid: d35107483564aba408475f75f4cf0d10, type: 2}
     value: {fileID: 723004483}
+  - key: {fileID: -2975853106802665402, guid: d35107483564aba408475f75f4cf0d10, type: 2}
+    value: {fileID: 1937479790}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &982674046
@@ -4177,6 +4179,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8596ea78640b554ab9270102d6fdd57, type: 3}
+--- !u!1 &1221659700 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 542289286968908983, guid: e8596ea78640b554ab9270102d6fdd57, type: 3}
+  m_PrefabInstance: {fileID: 1221659699}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1223363191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6188,6 +6195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1937479791}
   - component: {fileID: 1937479790}
+  - component: {fileID: 1937479792}
   m_Layer: 0
   m_Name: boxSFX
   m_TagString: Untagged
@@ -6299,12 +6307,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937479789}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.0173, y: 0.825, z: 4.7177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1937479792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937479789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003dd97d2d85b89478701622cfdc312d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followed: {fileID: 1221659700}
+  follower: {fileID: 1937479789}
 --- !u!1 &1938652889
 GameObject:
   m_ObjectHideFlags: 0
