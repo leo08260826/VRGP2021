@@ -7,6 +7,8 @@ public class HandPaintColorChange_scene2 : MonoBehaviour
     public string [] pathTohandObj;
     public Color defaultColor;
     public static bool CanGetColor = false;
+    public Color Material_Color;
+    public Color Color_onFloor;
 
     private GameObject colorObj = null;
 
@@ -31,11 +33,22 @@ public class HandPaintColorChange_scene2 : MonoBehaviour
         m_Material.color = c;
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "DrawingMaterial" && CanGetColor)
+        Debug.Log("hand paint trigger object : " + other+"\n tag : " + other.tag);
+        if(other.tag == "DrawingMaterial_onFloor")
         {
-            defaultColor = other.gameObject.GetComponent<MeshRenderer>().material.color;
+            Debug.Log("Change Hand Color_onFloor");
+            ChangeColor(Color_onFloor);
+            defaultColor = Color_onFloor;
         }
+        else if(other.tag == "DrawingMaterial")
+        {
+            Debug.Log("Change Hand Color");
+            Material_Color = other.gameObject.GetComponent<MeshRenderer>().material.color;
+            ChangeColor(Material_Color);
+            defaultColor = Material_Color;
+        }
+        
     }
 }

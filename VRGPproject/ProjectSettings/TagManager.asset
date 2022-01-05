@@ -7,6 +7,8 @@ TagManager:
   - Box
   - Trail
   - DrawingMaterial
+  - DrawingMaterial_onFloor
+  - Hand
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - TransitionEff
   - Stamp
   - ColoringPlane
-  - 
+  - ColorBall
   - 
   - 
   - 
