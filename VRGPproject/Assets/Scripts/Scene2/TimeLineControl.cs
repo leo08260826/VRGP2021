@@ -17,7 +17,7 @@ public class TimeLineControl : MonoBehaviour
     public static bool StampIsTriggered = false;
     public static bool GiftIsDelivered = false;
     public static bool GiftIsReceived = false;
-
+    private bool StampHadTriggered = false;
 
     // Start is called before the first frame update
     void Start()
@@ -87,13 +87,13 @@ public class TimeLineControl : MonoBehaviour
         GiftGlow1.SetActive(true);
         GiftGlow2.SetActive(true);
         GiftIsDelivered = true;
-        
+        this.GetComponent<AudioSource>().clip = audios[3];
+        this.GetComponent<AudioSource>().Play();
         MyPause();
         ////// should delete
         //Invoke("MyContinue", 3f);
         //////
-        this.GetComponent<AudioSource>().clip = audios[3];
-        this.GetComponent<AudioSource>().Play();
+        
     }
 
     public void Faint()
@@ -109,10 +109,11 @@ public class TimeLineControl : MonoBehaviour
             PD.Play();
             BucketIsTriggered = false;
         }
-        else if (StampIsTriggered)
+        else if (StampIsTriggered && !StampHadTriggered)
         {
             LeaveRoom();
             StampIsTriggered = false;
+            StampHadTriggered = true;
         }
         else if (GiftIsReceived)
         {
