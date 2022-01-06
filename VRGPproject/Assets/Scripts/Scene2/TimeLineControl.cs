@@ -8,12 +8,16 @@ public class TimeLineControl : MonoBehaviour
     [HideInInspector]
     public PlayableDirector PD;
 
-    private bool Pause = false;
-    static int anim_stage = 0;
+    public AudioClip[] audios;
+
+    public GameObject GiftGlow1;
+    public GameObject GiftGlow2;
 
     public static bool BucketIsTriggered = false;
     public static bool StampIsTriggered = false;
+    public static bool GiftIsDelivered = false;
     public static bool GiftIsReceived = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,10 +32,7 @@ public class TimeLineControl : MonoBehaviour
             //PD.Pause() will reset transform
             //PD.Stop() can't continue to play with the status of stop;
             PD.playableGraph.GetRootPlayable(0).SetSpeed(0);
-            Invoke("MyContinue", 1f);
-            anim_stage += 1;
-            Pause = true;
-            Debug.Log("Now Pause!");
+            //Debug.Log("Now Pause!");
         }
     }
 
@@ -40,40 +41,65 @@ public class TimeLineControl : MonoBehaviour
         if(PD != null)
         {
             PD.playableGraph.GetRootPlayable(0).SetSpeed(1);
-            Pause = false;
-            Debug.Log("Now Continue!");
+            //Debug.Log("Now Continue!");
         }
+    }
+    public void Asking()
+    {
+        Debug.Log("Asking");
+        MyPause();
+        Invoke("MyContinue", 2f);
+        this.GetComponent<AudioSource>().clip = audios[0];
+        this.GetComponent<AudioSource>().Play();
     }
 
     public void Stop2Talk()
     {
-        if(anim_stage == 1)
-        {
-            MyPause(); 
-            Invoke("MyContinue", 3f); // wait for talking
-        }
+        Debug.Log("Stop2Talk");
+        MyPause();
+        Invoke("MyContinue", 3f);
+        this.GetComponent<AudioSource>().clip = audios[1];
+        this.GetComponent<AudioSource>().Play();
+        //Invoke("MyContinue", 3f); // wait for talking
     }
 
     public void CanGetColor()
     {
+        Debug.Log("CanGetColor");
         MyPause();
+        ////// should delete
+        //Invoke("MyContinue", 3f);
+        //////
+        this.GetComponent<AudioSource>().clip = audios[2];
+        this.GetComponent<AudioSource>().Play();
         HandPaintColorChange_scene2.CanGetColor = true;
     }
 
     public void LeaveRoom()
-    {   
-        if(anim_stage == 2 && Pause)
-        {
-            MyContinue();
-        }
+    {
+        Debug.Log("LeaveRoom");
+        MyContinue();
+    }
+
+    public void DeliverGift()
+    {
+        Debug.Log("DeliverGift");
+        GiftGlow1.SetActive(true);
+        GiftGlow2.SetActive(true);
+        GiftIsDelivered = true;
+        
+        MyPause();
+        ////// should delete
+        //Invoke("MyContinue", 3f);
+        //////
+        this.GetComponent<AudioSource>().clip = audios[3];
+        this.GetComponent<AudioSource>().Play();
     }
 
     public void Faint()
     {
-        if (anim_stage == 3 && Pause)
-        {
-            MyContinue();
-        }
+        Debug.Log("Faint");
+        MyContinue();
     }
 
     public void Update()
@@ -81,14 +107,17 @@ public class TimeLineControl : MonoBehaviour
         if (BucketIsTriggered)
         {
             PD.Play();
+            BucketIsTriggered = false;
         }
         else if (StampIsTriggered)
         {
             LeaveRoom();
+            StampIsTriggered = false;
         }
         else if (GiftIsReceived)
         {
             Faint();
+            GiftIsReceived = false;
         }
     }
 }
