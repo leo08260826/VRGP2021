@@ -68,7 +68,7 @@ public class TimeLineControl : MonoBehaviour
         Debug.Log("CanGetColor");
         MyPause();
         ////// should delete
-        Invoke("MyContinue", 3f);
+        //Invoke("MyContinue", 3f);
         //////
         this.GetComponent<AudioSource>().clip = audios[2];
         this.GetComponent<AudioSource>().Play();
@@ -90,7 +90,7 @@ public class TimeLineControl : MonoBehaviour
         
         MyPause();
         ////// should delete
-        Invoke("MyContinue", 3f);
+        //Invoke("MyContinue", 3f);
         //////
         this.GetComponent<AudioSource>().clip = audios[3];
         this.GetComponent<AudioSource>().Play();
@@ -107,14 +107,17 @@ public class TimeLineControl : MonoBehaviour
         if (BucketIsTriggered)
         {
             PD.Play();
+            BucketIsTriggered = false;
         }
         else if (StampIsTriggered)
         {
             LeaveRoom();
+            StampIsTriggered = false;
         }
         else if (GiftIsReceived)
         {
             Faint();
+            GiftIsReceived = false;
         }
     }
 }
