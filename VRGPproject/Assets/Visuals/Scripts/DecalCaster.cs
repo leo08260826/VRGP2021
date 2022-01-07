@@ -13,6 +13,7 @@ public class DecalCaster : MonoBehaviour
     public bool IsMain = false;
     private Vector3 lastFramePos;
 
+    public GameObject Hint_Stamp;
     private void Start() 
     {
         lastFramePos = transform.position;
@@ -49,6 +50,7 @@ public class DecalCaster : MonoBehaviour
     private void CompleteStamping()
     {
         Debug.Log("completeStamping");
+        Hint_Stamp.SetActive(false);
         TimeLineControl.StampIsTriggered = true;
     }
 }

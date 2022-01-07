@@ -12,6 +12,8 @@ public class TimeLineControl : MonoBehaviour
 
     public GameObject GiftGlow1;
     public GameObject GiftGlow2;
+    public GameObject Hint_getColor;
+    public GameObject Hint_Stamp;
 
     public static bool BucketIsTriggered = false;
     public static bool StampIsTriggered = false;
@@ -73,6 +75,7 @@ public class TimeLineControl : MonoBehaviour
         this.GetComponent<AudioSource>().clip = audios[2];
         this.GetComponent<AudioSource>().Play();
         HandPaintColorChange_scene2.CanGetColor = true;
+        Hint_getColor.SetActive(true);
     }
 
     public void LeaveRoom()
@@ -84,16 +87,20 @@ public class TimeLineControl : MonoBehaviour
     public void DeliverGift()
     {
         Debug.Log("DeliverGift");
-        GiftGlow1.SetActive(true);
-        GiftGlow2.SetActive(true);
-        GiftIsDelivered = true;
         this.GetComponent<AudioSource>().clip = audios[3];
         this.GetComponent<AudioSource>().Play();
         MyPause();
         ////// should delete
         //Invoke("MyContinue", 3f);
         //////
-        
+        Invoke("ActivateGift", 6f);
+    }
+
+    public void ActivateGift()
+    {
+        GiftGlow1.SetActive(true);
+        GiftGlow2.SetActive(true);
+        GiftIsDelivered = true;
     }
 
     public void Faint()

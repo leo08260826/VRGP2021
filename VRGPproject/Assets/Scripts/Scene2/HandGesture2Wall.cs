@@ -17,7 +17,7 @@ public class HandGesture2Wall : MonoBehaviour
             }
             else if(other.gameObject.name == "RightHand Controller"){
                 RightHandController.gameObject.GetComponent<TestGesture2_Scene2>().GestureStart();
-            }   
+            }
         }
 
     }
