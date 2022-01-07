@@ -35,16 +35,13 @@ public class RayPainter : MonoBehaviour
     {
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
-        Debug.DrawRay(ray.origin, transform.forward*1000, Color.red);
 
         if(Physics.Raycast(ray,out hit,checkLength,checkMask))
         {
-            Debug.Log(hit.transform.name);
             if(debug)
                 Debug.DrawRay(ray.origin, hit.point - ray.origin, Color.red);
             Paintable p = null;
             if(hit.collider.gameObject.TryGetComponent(out p)) {
-                Debug.Log("Damn");
                 PaintManager.instance.paint(p, hit.point, radius, hardness, strength, paintColor);
             }
         }
