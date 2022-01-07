@@ -50,7 +50,9 @@ public class DecalCaster : MonoBehaviour
     private void CompleteStamping()
     {
         Debug.Log("completeStamping");
-        Hint_Stamp.SetActive(false);
+        if(IsMain){
+            Hint_Stamp.SetActive(false);
+        }        
         TimeLineControl.StampIsTriggered = true;
     }
 }
