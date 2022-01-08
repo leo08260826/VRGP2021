@@ -90,6 +90,9 @@ public class TimeLineControl : MonoBehaviour
     public void LeaveRoom()
     {
         Debug.Log("LeaveRoom");
+        ColorGlow_orange.SetActive(false);
+        ColorGlow_yellow.SetActive(false);
+        ColorGlow_purple.SetActive(false);
         MyContinue();
     }
 
