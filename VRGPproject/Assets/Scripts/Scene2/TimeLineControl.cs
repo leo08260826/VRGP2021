@@ -23,6 +23,7 @@ public class TimeLineControl : MonoBehaviour
     public static bool StampIsTriggered = false;
     public static bool GiftIsDelivered = false;
     public static bool GiftIsReceived = false;
+    public static bool showHintOnce = false;
     private bool StampHadTriggered = false;
 
     // Start is called before the first frame update

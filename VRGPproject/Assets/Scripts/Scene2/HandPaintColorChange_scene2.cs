@@ -15,8 +15,6 @@ public class HandPaintColorChange_scene2 : MonoBehaviour
     public GameObject Hint_Stamp;
     private GameObject colorObj = null;
 
-    private static bool ShowHintOnce = false;
-
     void Update()
     {
         if(colorObj==null)
@@ -45,11 +43,11 @@ public class HandPaintColorChange_scene2 : MonoBehaviour
             //Debug.Log("Change Hand Color_onFloor");
             ChangeColor(Color_onFloor);
             defaultColor = Color_onFloor;
-            if (!ShowHintOnce)
+            if (!TimeLineControl.showHintOnce)
             {
                 Hint_getColor.SetActive(false);
                 Hint_Stamp.SetActive(true);
-                ShowHintOnce = true;
+                TimeLineControl.showHintOnce = true;
             }
         }
         else if(other.tag == "DrawingMaterial" && CanGetColor)
@@ -58,12 +56,12 @@ public class HandPaintColorChange_scene2 : MonoBehaviour
             Material_Color = other.gameObject.GetComponent<MeshRenderer>().material.color;
             ChangeColor(Material_Color);
             defaultColor = Material_Color;
-            if (!ShowHintOnce)
+            if (!TimeLineControl.showHintOnce)
             {
                 Hint_getColor.SetActive(false);
                 Hint_Stamp.SetActive(true);
                 Wall_interaction.SetActive(true);
-                ShowHintOnce = true;
+                TimeLineControl.showHintOnce = true;
             }
         }
     }

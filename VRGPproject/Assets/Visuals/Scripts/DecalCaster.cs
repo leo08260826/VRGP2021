@@ -37,6 +37,7 @@ public class DecalCaster : MonoBehaviour
                 receiver.AddDecal(this, hit);
                 if (!CallCompleteStamping)
                 {
+                    closeHint();
                     Invoke("CompleteStamping", 45f);
                     CallCompleteStamping = true;
                 }
@@ -47,12 +48,15 @@ public class DecalCaster : MonoBehaviour
         lastFramePos = transform.position;
     }
 
+    private void closeHint() {
+        if (IsMain) {
+            Hint_Stamp.SetActive(false);
+        } 
+    }
+
     private void CompleteStamping()
     {
         Debug.Log("completeStamping");
-        if(IsMain){
-            Hint_Stamp.SetActive(false);
-        }        
         TimeLineControl.StampIsTriggered = true;
     }
 }
