@@ -4208,7 +4208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowPrefab: {fileID: 3942013242791893183, guid: 4da5438a2a0e7df4db9918f51171698f, type: 3}
   glowMat: {fileID: 2100000, guid: f636c833d42eee94494c66470d51cdde, type: 2}
-  glowColor: {r: 1, g: 1, b: 0, a: 0}
+  glowColor: {r: 0.38039216, g: 0.93333334, b: 1, a: 0.2901961}
   glowStr: 0
 --- !u!33 &141855707
 MeshFilter:
@@ -4585,7 +4585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowPrefab: {fileID: 3942013242791893183, guid: 4da5438a2a0e7df4db9918f51171698f, type: 3}
   glowMat: {fileID: 2100000, guid: f636c833d42eee94494c66470d51cdde, type: 2}
-  glowColor: {r: 1, g: 1, b: 0, a: 0}
+  glowColor: {r: 0.38039216, g: 0.93333334, b: 1, a: 0.2901961}
   glowStr: 0
 --- !u!33 &285901620
 MeshFilter:
@@ -13294,7 +13294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowPrefab: {fileID: 3942013242791893183, guid: 4da5438a2a0e7df4db9918f51171698f, type: 3}
   glowMat: {fileID: 2100000, guid: f636c833d42eee94494c66470d51cdde, type: 2}
-  glowColor: {r: 1, g: 1, b: 0, a: 0}
+  glowColor: {r: 0.38039216, g: 0.93333334, b: 1, a: 0.2901961}
   glowStr: 0
 --- !u!33 &1025545719
 MeshFilter:
@@ -13764,7 +13764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowPrefab: {fileID: 3942013242791893183, guid: 4da5438a2a0e7df4db9918f51171698f, type: 3}
   glowMat: {fileID: 2100000, guid: f636c833d42eee94494c66470d51cdde, type: 2}
-  glowColor: {r: 1, g: 1, b: 0, a: 0}
+  glowColor: {r: 0.38039216, g: 0.93333334, b: 1, a: 0.2901961}
   glowStr: 0
 --- !u!114 &1120039032
 MonoBehaviour:
@@ -14305,7 +14305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowPrefab: {fileID: 3942013242791893183, guid: 4da5438a2a0e7df4db9918f51171698f, type: 3}
   glowMat: {fileID: 2100000, guid: f636c833d42eee94494c66470d51cdde, type: 2}
-  glowColor: {r: 1, g: 1, b: 0, a: 0}
+  glowColor: {r: 0.38039216, g: 0.93333334, b: 1, a: 0.2901961}
   glowStr: 0
 --- !u!33 &1217846758
 MeshFilter:
@@ -14954,7 +14954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowPrefab: {fileID: 3942013242791893183, guid: 4da5438a2a0e7df4db9918f51171698f, type: 3}
   glowMat: {fileID: 2100000, guid: f636c833d42eee94494c66470d51cdde, type: 2}
-  glowColor: {r: 1, g: 1, b: 0, a: 0}
+  glowColor: {r: 0.38039216, g: 0.93333334, b: 1, a: 0.2901961}
   glowStr: 0
 --- !u!33 &1372400388
 MeshFilter:
@@ -16403,7 +16403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowPrefab: {fileID: 3942013242791893183, guid: 4da5438a2a0e7df4db9918f51171698f, type: 3}
   glowMat: {fileID: 2100000, guid: f636c833d42eee94494c66470d51cdde, type: 2}
-  glowColor: {r: 1, g: 1, b: 0, a: 0}
+  glowColor: {r: 0.38039216, g: 0.93333334, b: 1, a: 0.2901961}
   glowStr: 0
 --- !u!33 &1568190776
 MeshFilter:
@@ -17333,7 +17333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowPrefab: {fileID: 3942013242791893183, guid: 4da5438a2a0e7df4db9918f51171698f, type: 3}
   glowMat: {fileID: 2100000, guid: f636c833d42eee94494c66470d51cdde, type: 2}
-  glowColor: {r: 1, g: 1, b: 0, a: 0}
+  glowColor: {r: 0.38039216, g: 0.93333334, b: 1, a: 0.2901961}
   glowStr: 0
 --- !u!33 &1738699649
 MeshFilter:
@@ -17651,7 +17651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowPrefab: {fileID: 3942013242791893183, guid: 4da5438a2a0e7df4db9918f51171698f, type: 3}
   glowMat: {fileID: 2100000, guid: f636c833d42eee94494c66470d51cdde, type: 2}
-  glowColor: {r: 1, g: 1, b: 0, a: 0}
+  glowColor: {r: 0.38039216, g: 0.93333334, b: 1, a: 0.2901961}
   glowStr: 0
 --- !u!33 &1818988925
 MeshFilter:

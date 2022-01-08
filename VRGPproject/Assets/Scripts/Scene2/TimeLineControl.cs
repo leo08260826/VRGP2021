@@ -10,8 +10,12 @@ public class TimeLineControl : MonoBehaviour
 
     public AudioClip[] audios;
 
+    public GameObject ColorFloorInteraction;
     public GameObject GiftGlow1;
     public GameObject GiftGlow2;
+    public GameObject ColorGlow_orange;
+    public GameObject ColorGlow_yellow;
+    public GameObject ColorGlow_purple;
     public GameObject Hint_getColor;
     public GameObject Hint_Stamp;
 
@@ -75,7 +79,11 @@ public class TimeLineControl : MonoBehaviour
         this.GetComponent<AudioSource>().clip = audios[2];
         this.GetComponent<AudioSource>().Play();
         HandPaintColorChange_scene2.CanGetColor = true;
+        ColorFloorInteraction.SetActive(true);
         Hint_getColor.SetActive(true);
+        ColorGlow_orange.SetActive(true);
+        ColorGlow_yellow.SetActive(true);
+        ColorGlow_purple.SetActive(true);
     }
 
     public void LeaveRoom()

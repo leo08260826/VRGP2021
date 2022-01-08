@@ -3539,7 +3539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowPrefab: {fileID: 3942013242791893183, guid: 4da5438a2a0e7df4db9918f51171698f, type: 3}
   glowMat: {fileID: 2100000, guid: f636c833d42eee94494c66470d51cdde, type: 2}
-  glowColor: {r: 1, g: 1, b: 0, a: 1}
+  glowColor: {r: 0.38039216, g: 0.93333334, b: 1, a: 0.2901961}
   glowStr: 0
 --- !u!65 &1057191396
 BoxCollider:
@@ -5239,7 +5239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowPrefab: {fileID: 3942013242791893183, guid: 4da5438a2a0e7df4db9918f51171698f, type: 3}
   glowMat: {fileID: 2100000, guid: f636c833d42eee94494c66470d51cdde, type: 2}
-  glowColor: {r: 1, g: 1, b: 0, a: 1}
+  glowColor: {r: 0.38039216, g: 0.93333334, b: 1, a: 0.2901961}
   glowStr: 0
 --- !u!114 &1598159286
 MonoBehaviour:

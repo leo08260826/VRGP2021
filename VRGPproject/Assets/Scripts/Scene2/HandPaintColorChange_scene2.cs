@@ -10,11 +10,12 @@ public class HandPaintColorChange_scene2 : MonoBehaviour
     public Color Material_Color;
     public Color Color_onFloor;
 
+    public GameObject Wall_interaction;
     public GameObject Hint_getColor;
     public GameObject Hint_Stamp;
     private GameObject colorObj = null;
 
-    private bool ShowHintOnce = false;
+    private static bool ShowHintOnce = false;
 
     void Update()
     {
@@ -61,6 +62,7 @@ public class HandPaintColorChange_scene2 : MonoBehaviour
             {
                 Hint_getColor.SetActive(false);
                 Hint_Stamp.SetActive(true);
+                Wall_interaction.SetActive(true);
                 ShowHintOnce = true;
             }
         }

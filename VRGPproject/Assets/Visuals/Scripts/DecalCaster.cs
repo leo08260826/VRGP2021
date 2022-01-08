@@ -37,7 +37,7 @@ public class DecalCaster : MonoBehaviour
                 receiver.AddDecal(this, hit);
                 if (!CallCompleteStamping)
                 {
-                    Invoke("CompleteStamping", 30f);
+                    Invoke("CompleteStamping", 45f);
                     CallCompleteStamping = true;
                 }
             }
