@@ -12526,6 +12526,7 @@ GameObject:
   - component: {fileID: 4740001000322370090}
   - component: {fileID: 4740001000322370092}
   - component: {fileID: 4740001000322370091}
+  - component: {fileID: 4740001000322370093}
   m_Layer: 7
   m_Name: main_young
   m_TagString: Untagged
@@ -12588,6 +12589,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4740001000322370093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4740001000322370089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d0e93eb303ef442abd637b9cb32493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followed: {fileID: 9156312826393232908}
+  follower: {fileID: 4740001000322370089}
+  offsetX: 0
+  offsetZ: 0
 --- !u!1 &4756844121456896370
 GameObject:
   m_ObjectHideFlags: 0
@@ -21810,18 +21827,6 @@ PrefabInstance:
       propertyPath: defaultColor.r
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9156312825097095616, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9156312825097095616, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9156312825097095616, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9156312825097095619, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 3895
@@ -21836,7 +21841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9156312825959269075, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2
+      value: -0.65
       objectReference: {fileID: 0}
     - target: {fileID: 9156312825959269075, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
       propertyPath: m_LocalPosition.z

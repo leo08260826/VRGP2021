@@ -6,6 +6,8 @@ using UnityEngine.Playables;
 public class Scene1TimelineController : MonoBehaviour
 {
     public GameObject [] timelines;
+    public GameObject [] triggerObj;
+    public PlayableDirector prevTimeline;
     private bool [] havePlayeds;
     private bool canPlay = false; 
 
@@ -22,9 +24,11 @@ public class Scene1TimelineController : MonoBehaviour
     {
         if(!havePlayeds[index] && canPlay)
         { 
+            triggerObj[index].SetActive(false);
             havePlayeds[index] = true;
             canPlay = false;
             timelines[index].GetComponent<PlayableDirector>().Play();
+            prevTimeline.Stop();
         }
     }
 
