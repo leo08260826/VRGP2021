@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15896253, g: 0.16359857, b: 0.1532655, a: 1}
+  m_IndirectSpecularColor: {r: 0.1604398, g: 0.1631839, b: 0.1538418, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4661,7 +4661,7 @@ Transform:
   m_GameObject: {fileID: 1418042394}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.0173, y: 0.825, z: 4.7177}
-  m_LocalScale: {x: 0.12, y: 0.1, z: 0.3}
+  m_LocalScale: {x: 0.11, y: 0.08, z: 0.29}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 29
@@ -4757,7 +4757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowSound: {fileID: 8300000, guid: 7d68238674676e240a98351e55ae598b, type: 3}
-  speed: 2.4
+  speed: 2
   glowObjs:
   - {fileID: 1418042399}
 --- !u!82 &1418042401
@@ -6083,8 +6083,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followed: {fileID: 9156312826393232899}
   follower: {fileID: 1775737640}
-  offsetX: 0
-  offsetZ: 0
+  offsetX: 0.2
+  offsetZ: 0.2
 --- !u!4 &1775737648 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8067158310132978063, guid: a1eb36e50aeac84408505706abe6bace, type: 3}
@@ -7234,10 +7234,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6836577735343776289, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9156312825959269075, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3

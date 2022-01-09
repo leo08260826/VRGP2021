@@ -11,8 +11,7 @@ public class TimeLineControl : MonoBehaviour
     public AudioClip[] audios;
 
     public GameObject ColorFloorInteraction;
-    public GameObject GiftGlow1;
-    public GameObject GiftGlow2;
+    public GameObject GiftGlow;
     public GameObject ColorGlow_orange;
     public GameObject ColorGlow_yellow;
     public GameObject ColorGlow_purple;
@@ -110,8 +109,7 @@ public class TimeLineControl : MonoBehaviour
 
     public void ActivateGift()
     {
-        GiftGlow1.SetActive(true);
-        GiftGlow2.SetActive(true);
+        GiftGlow.SetActive(true);
         GiftIsDelivered = true;
     }
 

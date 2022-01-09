@@ -5,8 +5,7 @@ using UnityEngine;
 public class GiftController : MonoBehaviour
 {
     public GameObject GlobalGift;
-    public GameObject MomGiftGlowing1;
-    public GameObject MomGiftGlowing2;
+    public GameObject MomGiftGlowing;
     
 
     private void Start()
@@ -22,8 +21,7 @@ public class GiftController : MonoBehaviour
         if (!TimeLineControl.GiftIsReceived && TimeLineControl.GiftIsDelivered)
         {
             Debug.Log("hand trigger gift");
-            MomGiftGlowing1.SetActive(false);
-            MomGiftGlowing2.SetActive(false);
+            MomGiftGlowing.SetActive(false);
             TimeLineControl.GiftIsReceived = true;
         }
     }
