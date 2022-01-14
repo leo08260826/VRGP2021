@@ -3706,7 +3706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowSound: {fileID: 8300000, guid: 7d68238674676e240a98351e55ae598b, type: 3}
-  speed: 2
+  speed: 1.5
   glowObjs:
   - {fileID: 1057191395}
 --- !u!114 &1057191395
@@ -5535,7 +5535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowSound: {fileID: 8300000, guid: 7d68238674676e240a98351e55ae598b, type: 3}
-  speed: 2
+  speed: 1.5
   glowObjs:
   - {fileID: 1598159285}
 --- !u!23 &1598159287

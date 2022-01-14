@@ -17,6 +17,7 @@ public class TimeLineControl : MonoBehaviour
     public GameObject ColorGlow_purple;
     public GameObject Hint_getColor;
     public GameObject Hint_Stamp;
+    public GameObject GlobalGift;
 
     public static bool BucketIsTriggered = false;
     public static bool StampIsTriggered = false;
@@ -66,21 +67,28 @@ public class TimeLineControl : MonoBehaviour
         Invoke("MyContinue", 3f);
         this.GetComponent<AudioSource>().clip = audios[1];
         this.GetComponent<AudioSource>().Play();
-        //Invoke("MyContinue", 3f); // wait for talking
+        ColorFloorInteraction.SetActive(true);
     }
 
     public void CanGetColor()
     {
         Debug.Log("CanGetColor");
+        HandPaintColorChange_scene2.CanGetColor = true;
+    }
+
+    public void Welcome2GetColor()
+    {
+        Debug.Log("Welcome to get color");
         MyPause();
-        ////// should delete
-        //Invoke("MyContinue", 3f);
-        //////
         this.GetComponent<AudioSource>().clip = audios[2];
         this.GetComponent<AudioSource>().Play();
-        HandPaintColorChange_scene2.CanGetColor = true;
-        ColorFloorInteraction.SetActive(true);
+        
         Hint_getColor.SetActive(true);
+        Invoke("ColorGlowOnDesk", 10f);
+    }
+
+    public void ColorGlowOnDesk()
+    {
         ColorGlow_orange.SetActive(true);
         ColorGlow_yellow.SetActive(true);
         ColorGlow_purple.SetActive(true);
@@ -100,17 +108,15 @@ public class TimeLineControl : MonoBehaviour
         Debug.Log("DeliverGift");
         this.GetComponent<AudioSource>().clip = audios[3];
         this.GetComponent<AudioSource>().Play();
+        GlobalGift.SetActive(true);
+        GiftIsDelivered = true;
         MyPause();
-        ////// should delete
-        //Invoke("MyContinue", 3f);
-        //////
-        Invoke("ActivateGift", 6f);
+        Invoke("ActivateGiftGlow", 5f);
     }
 
-    public void ActivateGift()
+    public void ActivateGiftGlow()
     {
         GiftGlow.SetActive(true);
-        GiftIsDelivered = true;
     }
 
     public void Faint()

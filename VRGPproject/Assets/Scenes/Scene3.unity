@@ -7432,7 +7432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowSound: {fileID: 0}
-  speed: 2
+  speed: 1.5
   glowObjs:
   - {fileID: 141855706}
 --- !u!114 &141855706
@@ -7571,8 +7571,8 @@ Transform:
   - {fileID: 917269345}
   - {fileID: 1343033328}
   - {fileID: 661464559}
-  - {fileID: 1253298742}
   - {fileID: 1607693335}
+  - {fileID: 1253298742}
   - {fileID: 861947063}
   m_Father: {fileID: 292212362}
   m_RootOrder: 2
@@ -9862,7 +9862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowSound: {fileID: 0}
-  speed: 2
+  speed: 1.5
   glowObjs:
   - {fileID: 285901619}
 --- !u!114 &285901619
@@ -30968,7 +30968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowSound: {fileID: 0}
-  speed: 2
+  speed: 1.5
   glowObjs:
   - {fileID: 1025545718}
 --- !u!114 &1025545718
@@ -34339,7 +34339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowSound: {fileID: 8300000, guid: 7d68238674676e240a98351e55ae598b, type: 3}
-  speed: 2
+  speed: 1.5
   glowObjs:
   - {fileID: 1120039031}
 --- !u!82 &1120039033
@@ -36065,7 +36065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowSound: {fileID: 0}
-  speed: 2
+  speed: 1.5
   glowObjs:
   - {fileID: 1217846757}
 --- !u!114 &1217846757
@@ -40044,7 +40044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowSound: {fileID: 0}
-  speed: 2
+  speed: 1.5
   glowObjs:
   - {fileID: 1372400387}
 --- !u!114 &1372400387
@@ -45108,7 +45108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowSound: {fileID: 0}
-  speed: 2
+  speed: 1.5
   glowObjs:
   - {fileID: 1568190775}
 --- !u!114 &1568190775
@@ -50619,7 +50619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowSound: {fileID: 8300000, guid: 7d68238674676e240a98351e55ae598b, type: 3}
-  speed: 2
+  speed: 1.5
   glowObjs:
   - {fileID: 1738699648}
 --- !u!114 &1738699648
@@ -51755,7 +51755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowSound: {fileID: 0}
-  speed: 2
+  speed: 1.5
   glowObjs:
   - {fileID: 1818988924}
 --- !u!114 &1818988924
