@@ -28,21 +28,19 @@ public class GlowAudioDelay : MonoBehaviour
     {
         float rad = Time.realtimeSinceStartup * speed;
         float timeArg = Mathf.Abs(Mathf.Sin(rad));
-        if (StartPlaying)
+        if (audioSource != null
+            && (rad % Mathf.PI) >= (Mathf.PI * 0.98)
+            && (rad % Mathf.PI) <= Mathf.PI
+            && !audioSource.isPlaying
+            && StartPlaying
+        )
         {
-            if (audioSource != null
-                && (rad % Mathf.PI) >= (Mathf.PI * 0.98)
-                && (rad % Mathf.PI) <= Mathf.PI
-                && !audioSource.isPlaying
-            )
-            {
-                audioSource.Play();
-            }
-            for (int i = 0; i < glowObjs.Length; i++)
-            {
-                glowObjs[i].glowStr = timeArg;
-            }
-        } 
+            audioSource.Play();
+        }
+        for (int i = 0; i < glowObjs.Length; i++)
+        {
+            glowObjs[i].glowStr = timeArg;
+        }
     }
 
     private void OnEnable()
