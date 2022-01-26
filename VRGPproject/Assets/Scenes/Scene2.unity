@@ -23162,9 +23162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handObjName: combineRightwithPaint(Clone)
-  index: 0.1
-  three: 0.1
-  thumb: 0.1
+  index: 0.3
+  three: 0.3
+  thumb: 0.3
 --- !u!114 &9156312826393232912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23198,9 +23198,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handObjName: combineLeftwithPaint(Clone)
-  index: 0.1
-  three: 0.1
-  thumb: 0.1
+  index: 0.3
+  three: 0.3
+  thumb: 0.3
 --- !u!4 &9156312826393232919 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9156312825097095616, guid: 077d128b39b057a4088a0bc2e4a30e07, type: 3}
